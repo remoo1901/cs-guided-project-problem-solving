@@ -15,6 +15,17 @@ Notes:
 """
 
 
-def last(a, n):
+def last(arr, n):
     # Your code here
+    if n > len(arr):
+        return "invalid"
 
+    if n == 0:
+        return []
+
+    return arr[len(arr)-n:]
+
+
+print(last([1, 2, 3, 4, 5], 7))
+
+print(last([4, 3, 9, 9, 7, 6], 3))

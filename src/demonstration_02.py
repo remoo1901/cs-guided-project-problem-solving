@@ -14,7 +14,12 @@ Notes:
 - The input list will only contain integers.
 """
 
-
 def add_indexes(numbers):
-    # Your code here
+    new_list = []
+    for i, num in enumerate(numbers):
+        n = num + i
+        new_list.append(n)
+    
+    return new_list     
 
+print(add_indexes([5, 4, 3, 2, 1])) 

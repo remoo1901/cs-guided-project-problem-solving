@@ -13,7 +13,13 @@ Notes:
 - Bonus: Try to complete this challenge in one line!
 """
 
-
 def multiply_nums(nums):
-    # Your code here
 
+    v = nums.split(", ")
+    print(v)
+
+    result = 1
+    for i in v:
+        result *=  int(i)
+    return result
+print(multiply_nums("2, 3, 5, 6, 7"))
